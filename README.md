@@ -150,10 +150,11 @@ A dedicated cron at 03:30 UTC generates next-day picks each night. When users op
 
 ## Recent Additions
 
-- Deploy-status pill on signup page — live board preview with Cloudflare deploy state indicator
-- Admin Discord buttons on board root tab for Top-3 EV and daily summary notifications
-- EV Betta signup page WebGL cleanup and input sanitization
-- Matchup preview image on signup page replacing animated card swap
+- Player props slating guard — slate props against today's NBA games to prevent stale/completed game props
+- Sort no-L5 picks (lesser-used model outputs) last on the board
+- Admin Discord buttons for Top-3 EV and daily summary notifications
+- Deploy-status pill on signup page with Cloudflare deploy state
+- Matchup preview image on signup page + WebGL cleanup and input sanitization
 
 ---
 
