@@ -150,11 +150,11 @@ A dedicated cron at 03:30 UTC generates next-day picks each night. When users op
 
 ## Recent Additions
 
-- Player props slating guard — slate props against today's NBA games to prevent stale/completed game props
-- Sort no-L5 picks (lesser-used model outputs) last on the board
-- Admin Discord buttons for Top-3 EV and daily summary notifications
-- Deploy-status pill on signup page with Cloudflare deploy state
-- Matchup preview image on signup page + WebGL cleanup and input sanitization
+- Outlier token health-check PM2 job + Windows toast alerts — daily automated token validation with desktop notifications on expiry
+- Rescrape picks now fires Discord notify-top3 — manual rescrape button also sends top-3 picks to Discord with lowered ultra-safe EV threshold
+- PM2 popup cleanup optimized 41–49% — StreamWriter, cached netstat, batch CimInstance property filter
+- Reads OUTLIER_TOKEN from `.env` at runtime — bypasses PM2 baked-in env on fallback to prevent stale tokens
+- recomputeOpportunities guarded with try-catch in odds ingest handler
 
 ---
 
