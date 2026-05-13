@@ -150,11 +150,11 @@ A dedicated cron at 03:30 UTC generates next-day picks each night. When users op
 
 ## Recent Additions
 
-- Outlier token health-check PM2 job + Windows toast alerts — daily automated token validation with desktop notifications on expiry
-- Rescrape picks now fires Discord notify-top3 — manual rescrape button also sends top-3 picks to Discord with lowered ultra-safe EV threshold
-- PM2 popup cleanup optimized 41–49% — StreamWriter, cached netstat, batch CimInstance property filter
-- Reads OUTLIER_TOKEN from `.env` at runtime — bypasses PM2 baked-in env on fallback to prevent stale tokens
-- recomputeOpportunities guarded with try-catch in odds ingest handler
+- Carry-forward logic: stale picks auto-carry when no fresh sync for the day
+- Grade picks tool: post-game result grading and hit-rate tracking
+- Pre-game injury enrichment: `notify-pregame-injuries` runs before daily picks delivery
+- `notify-top3` and `notify-ultra-safe` tools for Discord pick alerts
+- `upload-nba-snapshots` and `upload-outlier-ranks` for rank snapshot sync
 
 ---
 
