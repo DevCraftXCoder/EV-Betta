@@ -13,20 +13,6 @@
 
 ---
 
-## Table of Contents
-
-- [Architecture](#architecture)
-- [Tech Stack](#tech-stack)
-- [Features](#features)
-- [Security](#security)
-- [Key Engineering Decisions](#key-engineering-decisions)
-- [Recent Additions](#recent-additions)
-- [API](#api)
-- [Running This](#running-this)
-- [Disclaimer](#disclaimer)
-
----
-
 ## Architecture
 
 ```
@@ -194,32 +180,6 @@ Authorization: Bearer <sync-secret>
 
 ---
 
-## Running This
-
-```bash
-# Worker API
-cd ev-betta-worker
-npm install
-npx wrangler dev          # local dev
-npx wrangler deploy       # deploy to CF Workers
-
-# Scraper
-cd ev-betta-scraper
-npm install
-npm run picks             # manual picks run
-npm run odds-seed         # manual odds seed
-
-# UI
-cd ev-betta-ui
-npm install
-npm run dev               # Vite dev server
-npm run build             # production build
-```
-
-See `.env.example` for required environment variables.
-
----
-
 ## Disclaimer
 
 EV Betta is for **entertainment and informational purposes only.** Aggregated picks represent analysis from public sources — not financial, gambling, or investment advice. Always gamble responsibly and within legal jurisdictions.
@@ -229,3 +189,7 @@ EV Betta is for **entertainment and informational purposes only.** Aggregated pi
 ## License
 
 MIT — see [LICENSE](LICENSE)
+
+---
+
+*Built by Frxncois — not open source.*
